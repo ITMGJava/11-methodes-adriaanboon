@@ -31,7 +31,7 @@ public class Methodes {
         var rente = new Scanner(System.in);
         float invoerRente = rente.nextFloat();
         double percentageRente = invoerRente/100+1;
-        samengestelderenteNaTienJaar = Math.pow(10, percentageRente);
+        samengestelderenteNaTienJaar = Math.pow(percentageRente, 10);
         totaalBedragIncRente = samengestelderenteNaTienJaar * invoerBedrag;
         System.out.println(totaalBedragIncRente);
         return 1;
